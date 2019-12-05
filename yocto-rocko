@@ -3,7 +3,7 @@
     <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yoctoproject"/>
     <remote alias="repo" fetch="https://git.toradex.com" name="toradex"/>
     <remote alias="repo" fetch="https://github.com" name="github"/>
-    <remote alias="repo" fetch="https://github.com/u-blox/" name="u-blox"/>
+    <remote alias="repo" fetch="git@github.com" name="u-blox"/>
 
     <default sync-j="4"/>
 
@@ -32,7 +32,7 @@
     <project name="meta-qt4" path="layers/meta-qt4" remote="yoctoproject" revision="e290738759ef3f39c9e079eaa9b606a62107e5ba"/>
 
     <!-- u-blox/sw-host-sho -->
-    <project name="meta-ublox-imx6-gdp.git" path="layers/meta-ublox-imx6-gdp" remote="u-blox" revision="master">
+    <project name="u-blox/meta-ublox-imx6-gdp.git" path="layers/meta-ublox-imx6-gdp" remote="u-blox" revision="master">
         <linkfile dest="ublox-init-build-env" src="buildconf/ublox-init-build-env"/>
     </project>
 </manifest>
